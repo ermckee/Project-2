@@ -24,10 +24,10 @@ function getTableData(table) {
         zoomType: 'xy'
         },
         title: {
-        text: "Coronavirus Outbreak in the US"
+        text: "FBI's Crime in the US"
         },
         subtitle: {
-        text: "Update: November 6, 2020 from covidtracking.com <br>Click and drag in the plot area to zoom in"
+        text: "Preliminary Report of Crime in the US during the years 2018 and 2019"
         },
         xAxis: [
         {
@@ -40,23 +40,71 @@ function getTableData(table) {
         yAxis: [
         {
         title: {
-        text: "Value"
+        text: "Category"
         }
         }
         ],
         series: [
         {
-        name: "Confirmed Cases",
+        name: "Violent Crime",
         type: "lollipop",
         data: data[1],
         color: "orange"
         },
         {
-        name: "Deaths",
+        name: "Murder",
         type: "lollipop",
         data: data[2],
         color: "red"
         }
+        {
+        name: "Rape",
+        type: "lollipop",
+        data: data[3],
+        color: "yellow"
+        },
+        {
+        name: "Robbery",
+        type: "lollipop",
+        data: data[4],
+        color: "pink"
+        },
+        {
+        name: "Aggravated Assault",
+        type: "lollipop",
+        data: data[5],
+        color: "grey"
+        },      
+        {
+        name: "Property crime",
+        type: "lollipop",
+        data: data[6],
+        color: "black"
+        },
+        {
+        name: "Burglary",
+        type: "lollipop",
+        data: data[7],
+        color: "magenta"
+        },
+        {
+        name: "Larceny-Theft",
+        type: "lollipop",
+        data: data[8],
+        color: "pastel pink"
+        }, 
+        {
+        name: "Motor vehicile theft",
+        type: "lollipop",
+        data: data[9],
+        color: "pastel purple"
+        },  
+        {
+        name: "Arson",
+        type: "lollipop",
+        data: data[10],
+        color: "pastel blue"
+        },                 
         ],
         tooltip: {
         shared: true
