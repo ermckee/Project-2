@@ -27,7 +27,7 @@ function getTableData(table) {
         text: "Crime in Wichita, Kansas"
         },
         subtitle: {
-        text: "The FBI's Preliminary Report of Crime in the US during the years 2018 and 2019"
+        text: "The FBI's Preliminary Report of Crime in Wichita, Kansas during the years 2018 and 2019"
         },
         xAxis: [
         {
