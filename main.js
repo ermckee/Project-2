@@ -6,16 +6,16 @@ $(document).ready(function(){
     });
 function getTableData(table) {
     const data = [],
-    Category = [],
+    category = [],
     y2018 = [],
     y2019 = [];
     table.rows({ search: "applied" }).every(function() {
     const data = this.data();
-    Category.push(data[0]);
+    category.push(data[0]);
     y2018.push(parseInt(data[1].replace(/\,/g, "")));
     y2019.push(parseInt(data[2].replace(/\,/g, "")));
     });
-    data.push(Category, y2018, y2019);
+    data.push(category, y2018, y2019);
     return data;
     }
     function createHighcharts(data){
