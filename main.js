@@ -7,15 +7,15 @@ $(document).ready(function(){
 function getTableData(table) {
     const data = [],
     category = [],
-    y2018 = [],
-    y2019 = [];
+    year2018 = [],
+    year2019 = [];
     table.rows({ search: "applied" }).every(function() {
     const data = this.data();
     category.push(data[0]);
-    y2018.push(parseInt(data[1].replace(/\,/g, "")));
-    y2019.push(parseInt(data[2].replace(/\,/g, "")));
+    year2018.push(parseInt(data[1].replace(/\,/g, "")));
+    year2019.push(parseInt(data[2].replace(/\,/g, "")));
     });
-    data.push(category, y2018, y2019);
+    data.push(category, year2018, year2019);
     return data;
     }
     function createHighcharts(data){
