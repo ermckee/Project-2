@@ -24,10 +24,10 @@ function getTableData(table) {
         zoomType: 'xy'
         },
         title: {
-        text: "FBI's Crime in the US"
+        text: "Crime in Wichita, Kansas"
         },
         subtitle: {
-        text: "Preliminary Report of Crime in the US during the years 2018 and 2019"
+        text: "The FBI's Preliminary Report of Crime in the US during the years 2018 and 2019"
         },
         xAxis: [
         {
